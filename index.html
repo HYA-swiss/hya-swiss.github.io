@@ -52,10 +52,11 @@
   .lang a{color:var(--on-pine-muted);text-decoration:none;padding-bottom:2px}
   .lang a:hover{color:var(--on-pine)}
   .lang a[aria-current]{color:var(--on-pine);border-bottom:1px solid var(--sand)}
-  .hero nav a.pill{color:var(--pine);background:var(--sand);padding:9px 16px;border-radius:999px;font-weight:500}
+  .hero nav a.pill{color:var(--pine);background:var(--sand);padding:9px 16px;border-radius:999px;font-weight:500;white-space:nowrap;display:inline-block}
   @media (max-width:760px){nav li.hide-sm{display:none}nav ul{gap:16px}}
+  @media (max-width:480px){.wrap{padding:0 20px}.bar{gap:10px}.mark{font-size:1.35rem;letter-spacing:.16em}.right{gap:12px}.hero nav a.pill{padding:7px 12px;font-size:.875rem}.lang{gap:8px;font-size:.75rem}}
 
-  .hero-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:end;padding:72px 0 0}
+  .hero-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:end;padding-top:72px}
   .hero h1{font-size:clamp(2.6rem,6.2vw,5.4rem);line-height:1.02;letter-spacing:-.02em;max-width:11ch}
   .hero .lead{color:var(--on-pine-muted);font-size:1.1875rem;max-width:44ch;margin:28px 0 36px}
   .actions{display:flex;flex-wrap:wrap;gap:14px 26px;align-items:center;padding-bottom:88px}
@@ -156,7 +157,7 @@
         <li><a class="pill" href="#haendler">Für Händler</a></li>
       </ul>
     </nav>
-    <div class="lang" aria-label="Sprache / Langue / Lingua / Language"><a href="index.html" hreflang="de" lang="de" aria-current="page">DE</a><a href="fr.html" hreflang="fr" lang="fr">FR</a><a href="it.html" hreflang="it" lang="it">IT</a><a href="en.html" hreflang="en" lang="en">EN</a></div>
+    <div class="lang" aria-label="Sprache / Langue / Lingua / Language"><a href="./" hreflang="de" lang="de" aria-current="page">DE</a><a href="fr.html" hreflang="fr" lang="fr">FR</a><a href="it.html" hreflang="it" lang="it">IT</a><a href="en.html" hreflang="en" lang="en">EN</a></div>
     </div>
   </div>
 
